@@ -1,0 +1,4 @@
+# Ignore a pasta __pycache__
+__pycache__
+# Ignore o arquivo credenciais.py
+credenciais.py

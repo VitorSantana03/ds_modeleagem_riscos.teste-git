@@ -2,11 +2,6 @@ from trino.auth  import BasicAuthentication
 from trino.dbapi import connect
 from credenciais import credenciais
 
-from pyspark import SparkContext
-from pyspark.sql import SparkSession
-from datalake_lib.datalake.dllib_spark import DLLibSpark
-from datalake_lib.datalake.metadata import Environment, Zone
-
 import sqlalchemy as sa
 import pandas as pd
 import pyodbc
@@ -49,9 +44,6 @@ class ConexaoBancoDados:
                         catalog     ='hive',
                         port        = 443
                         )
-    
-    def conexaoPyspark(self):
-        
         
     def atualizaTabela(self,queryAtt,trino=0):
         """
@@ -115,5 +107,3 @@ class ConexaoBancoDados:
                     index=False,
                     if_exists='append',
                     schema=configSql['Schema'])
-    
-    

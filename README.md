@@ -47,4 +47,5 @@ Não de commit de suas credencias juntamente com seu código na hora de subir em
 __pycache__
 # Ignore o arquivo credenciais.py
 credenciais.py
+
 ```
